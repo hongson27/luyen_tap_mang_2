@@ -1,0 +1,15 @@
+let arr =[]
+for (let i=0; i<4; i++){
+arr[i] =prompt('Nhap ky tu: ');
+}
+document.write(arr+"<br>");
+let first = 0;
+let last = arr.length-1;
+while (first < last) {
+temp = arr[first];
+arr[first] = arr[last];
+arr[last] = temp;
+first++;
+last--;
+}
+document.write(arr.join(''));
