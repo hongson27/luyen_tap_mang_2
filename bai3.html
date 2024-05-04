@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt ('Nhap do dai mang: ');
+    let i= 0;
+    let arr = [];
+    let count = 0;
+while (i < n) {
+    arr.push(prompt('Nhap phan tu thu '+i+ ' :'));
+    i++;
+}
+document.write(arr);
+for (let i = 0; i < arr.length; i++) {
+    if (!isNaN(arr[i])) {
+        count++;
+    }
+}
+document.write("<br>"+ 'Co '+ count + ' phan tu la ky tu so');
+</script>
+</body>
+</html>
