@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let i=0;
+let arr=[];
+let input = prompt('Nhap do dai mang: ');
+while (i<input){
+    arr.push(prompt('Nhap phan tu thu '+  i + ' :'))
+    i++;
+}
+document.write("<br>" + arr);
+for (let i=0; i<arr.length; i++) {
+    if (arr[i] == '-') {
+        arr.splice(i, 1, '_');
+    }
+}
+document.write("<br>" + arr);
+</script>
+</body>
+</html>
