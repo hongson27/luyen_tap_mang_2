@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemTra = false;
+let input1 = prompt('Nhap chuoi 1: ');
+let input2 = prompt('Nhap chuoi 2: ');
+for (let i=0; i<input1.length; i++) {
+    if (input1[i] === input2[i]) {
+        kiemTra = true;
+    } else {
+        kiemTra = false;
+        break;
+    }
+}
+if (kiemTra === false) {
+    alert('hai chuoi khong giong nhau');
+} else {
+    alert('hai chuoi giong nhau');
+}
+</script>
+</body>
+</html>
